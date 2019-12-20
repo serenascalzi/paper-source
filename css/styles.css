@@ -9,23 +9,33 @@
 
 html {
 	box-sizing: border-box;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 28px;
 	background-color: gray;
 }
 
 header {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	font-family: 'Amatic SC', cursive;
 	text-align: center;
 	color: white;
 }
 
-h2 {
-	color: gray;
+h1 {
+	padding-top: 20px;
+	font-size: 48px;
+	text-transform: uppercase;
 }
 
 p {
-	padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 24px;
+	text-transform: lowercase;
+}
+
+.reg {
+	font-size: 12px;
 }
 
 .section {
@@ -49,7 +59,6 @@ p {
 	width: 50%;
 	float: left;
 	padding-right: 40px;
-	box-sizing: border-box;
 }
 
 #content > ul {
@@ -58,131 +67,131 @@ p {
 }
 
 #white {
-	background-color: rgb(255,255,255);
+	background-color: #FFFFFF;
 }
 
 #luxe-blush {
-	background-color: rgb(250,235,233);
+	background-color: #FAEBE9;
 }
 
 #blossom {
-	background-color: rgb(241,200,204);
+	background-color: #F1C8CC;
 }
 
 #rose {
-	background-color: rgb(227,180,187);
+	background-color: #E3B4BB;
 }
 
 #fuchsia {
-	background-color: rgb(212,51,140);
+	background-color: #D4338C;
 }
 
 #red {
-	background-color: rgb(204,65,60);
+	background-color: #CC413C;
 }
 
 #coral {
-	background-color: rgb(239,189,178);
+	background-color: #EFBDB2;
 }
 
 #papaya {
-	background-color: rgb(231,144,112);
+	background-color: #E79070;
 }
 
 #persimmon {
-	background-color: rgb(212,76,50);
+	background-color: #D44C32;
 }
 
 #sunshine {
-	background-color: rgb(253,240,128);
+	background-color: #FDF080;
 }
 
 #curry {
-	background-color: rgb(243,210,118);
+	background-color: #F3D276;
 }
 
 #mint {
-	background-color: rgb(202,227,207);
+	background-color: #CAE3CF;
 }
 
 #eucalyptus {
-	background-color: rgb(176,205,196);
+	background-color: #B0CDC4;
 }
 
 #clover {
-	background-color: rgb(148,197,109);
+	background-color: #94C56D;
 }
 
 #spruce {
-	background-color: rgb(43,95,85);
+	background-color: #2B5F55;
 }
 
 #pool {
-	background-color: rgb(171,207,206);
+	background-color: #ABCFCE;
 }
 
 #peacock {
-	background-color: rgb(64,144,155);
+	background-color: #40909B;
 }
 
 #bluebell {
-	background-color: rgb(180,210,233);
+	background-color: #B4D2E9;
 }
 
 #hydrangea {
-	background-color: rgb(158,188,217);
+	background-color: #9EBCD9;
 }
 
 #royal {
-	background-color: rgb(50,112,181);
+	background-color: #3270B5;
 }
 
 #night {
-	background-color: rgb(27,45,80);
+	background-color: #1B2D50;
 }
 
 #plum {
-	background-color: rgb(202,194,219);
+	background-color: #CAC2DB;
 }
 
 #beet {
-	background-color: rgb(143,87,147);
+	background-color: #8F5793;
 }
 
 #dahlia {
-	background-color: rgb(129,67,86);
+	background-color: #814356;
 }
 
 #aubergine {
-	background-color: rgb(53,21,65);
+	background-color: #351541;
 }
 
 #luxe-cream {
-	background-color: rgb(252,250,236);
+	background-color: #FCFAEC;
 }
 
 #paper-bag {
-	background-color: rgb(193,171,142);
+	background-color: #C1AB8E;
 }
 
 #antique-gold {
-	background-color: rgb(174,143,88);
+	background-color: #AE8F58;
 }
 
 #luxe-grey {
-	background-color: rgb(221,221,223);
+	background-color: #DDDDDF;
 }
 
 #gravel {
-	background-color: rgb(177,177,166);
+	background-color: #B1B1A6;
 }
 
 #slate {
-	background-color: rgb(89,88,77);
+	background-color: #59584D;
 }
 
 #black {
-	background-color: rgb(34,31,32);
+	background-color: #221F20;
 }
 
 .color:hover {
@@ -190,11 +199,13 @@ p {
 }
 
 #content > ul > li > a {
-	padding: 10px;
+	padding: 15px;
 	display: block;
-	color: gray;
-	text-decoration: none;
 	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: gray;
 }
 
 #content > ul > li > a.active {
@@ -206,13 +217,11 @@ section {
 	transition: height 0.5s;
 	overflow: hidden;
 	color: white;
-	font-size: 16px;
-	line-height: 24px;
 }
 
 .show {
 	padding: 20px;
-	height: 140px;
+	height: 150px;
 	color: gray;
 }
 
@@ -231,15 +240,16 @@ section {
 #content2 > ul > li {
 	padding: 10px;
 	display: block;
-	color: gray;
-	text-decoration: none;
 	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: gray;
 }
 
 #content2 > ul > ul > li {
 	margin-left: 40px;
 	color: gray;
-	font-size: 16px;
 }
 
 footer {
@@ -247,6 +257,11 @@ footer {
 	padding-bottom: 20px;
 	text-align: center;
 	color: white;
+}
+
+footer > p {
+	font-size: 16px;
+	text-transform: none;
 }
 
 footer > p > a {
